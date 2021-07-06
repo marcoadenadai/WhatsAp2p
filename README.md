@@ -4,12 +4,20 @@ Computer Engineering class taken in 2020/1
 
 ##### Objetivo: Obter conhecimentos básicos para o desenvolvimento de software peer-to-peer (P2P) em ambientes TCP/IP. Implementar um sistema de envio de mensagens de texto e foto peer-to-peer (WhatsAp2p) em linguagem C.
 
-### Módulos
+## Índice:
+  - [Módulos](#módulos)
+  - [Requisitos](#requisitos-do-projeto)
+  - [Ambiente](#ambiente-de-desenvolvimento)
+  - [Compilação](#processo-de-compilação)
+  - [Demonstração](#demonstrações)
+
+
+## Módulos
 #### -  Servidor central
-> O **servidor central** deverá permitir aos usuários localizar os demais usuários online. Cada usuário é identificado no servidor central por um **número de telefone** e sua localização corresponde ao **endereço IP** e à porta onde o módulo de usuário deste usuário aguardará por mensagens e fotos.
+* O **servidor central** deverá permitir aos usuários localizar os demais usuários online. Cada usuário é identificado no servidor central por um **número de telefone** e sua localização corresponde ao **endereço IP** e à porta onde o módulo de usuário deste usuário aguardará por mensagens e fotos.
 > 
 #### - Módulo de usuário
-> O **módulo de usuário** deverá permitir ao usuário enviar mensagens e fotos a outros usuários e também receber mensagens e fotos de outros usuários, a partir das informações de localização obtidas do **servidor central**.
+* O **módulo de usuário** deverá permitir ao usuário enviar mensagens e fotos a outros usuários e também receber mensagens e fotos de outros usuários, a partir das informações de localização obtidas do **servidor central**.
 
 ## Requisitos do Projeto
 
@@ -29,6 +37,18 @@ Quando um usuário finalizar o seu **módulo de usuário**, toda informação re
 
 ## Ambiente de Desenvolvimento
 
+#### O projeto foi desenvolvido em ambiente linux (Ubuntu), para o processo de compilação é necessário instalar algumas dependências, segue instruções:
+
+* A biblioteca ```"ncurses.h"``` deve ser instalada: ```$ sudo apt-get install libncurses5-dev libncursesw5-dev -y```
+
+* Todas as demais dependências envolvendo a stdlib, make e o gcc também são pré-requisito para a compilação.
+
+* A IDE utilizada no desenvolvimento do projeto foi o VSCode.
+
 ## Processo de Compilação
+
+#### Para a compilação foi utilizado o gcc 9.3.0 e o GNU Make 4.2.1
+
+
 
 ##  Demonstrações
