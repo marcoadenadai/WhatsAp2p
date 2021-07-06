@@ -49,6 +49,24 @@ Quando um usuário finalizar o seu **módulo de usuário**, toda informação re
 
 #### Para a compilação foi utilizado o gcc 9.3.0 e o GNU Make 4.2.1
 
-
+```
+$ make
+gcc -o lib/contatos.o lib/contatos.c -c
+gcc -o lib/regs.o lib/regs.c -c
+gcc -o lib/ui.o lib/ui.c -lncurses -c 
+gcc -o lib/messenger.o lib/messenger.c -c -Wimplicit-function-declaration
+lib/messenger.c: In function ‘envia_msg’:
+lib/messenger.c:126:5: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  126 |     close(externo);
+      |     ^~~~~
+      |     pclose
+gcc -o modulo_usuario modulo_usuario.c lib/regs.o lib/contatos.o lib/ui.o lib/messenger.o -pthread -lncurses -Wimplicit-function-declaration
+modulo_usuario.c: In function ‘thread_fn’:
+modulo_usuario.c:415:5: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  415 |     close(ns);
+      |     ^~~~~
+      |     pclose
+gcc -o servidor_central servidor_central.c lib/regs.o -pthread
+```
 
 ##  Demonstrações
