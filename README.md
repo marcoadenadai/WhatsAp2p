@@ -70,3 +70,15 @@ gcc -o servidor_central servidor_central.c lib/regs.o -pthread
 ```
 
 ##  Demonstrações
+
+Parte 1:
+
+![Demo obs: quality loss on conversion](part1.gif)
+
+Parte 2:
+
+![Demo obs: quality loss on conversion](part2.gif)
+
+Parte 3: 
+
+![Demo obs: quality loss on conversion](part3.gif)
