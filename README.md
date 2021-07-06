@@ -2,7 +2,7 @@
 # WhatsAp2p
 Computer Engineering class taken in 2020/1
 
-##### Objetivo: Obter conhecimentos básicos para o desenvolvimento de software peer-to-peer (P2P) em ambientes TCP/IP. Implementar um sistema de envio de mensagens de texto e foto peer-to-peer (WhatsAp2p) em linguagem C.
+* **Objetivo:** Obter conhecimentos básicos para o desenvolvimento de software peer-to-peer (P2P) em ambientes TCP/IP. Implementar um sistema de envio de mensagens de texto e foto peer-to-peer (WhatsAp2p) em linguagem C.
 
 ## Índice:
   - [Módulos](#módulos)
